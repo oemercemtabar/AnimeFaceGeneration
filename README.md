@@ -10,10 +10,8 @@ This project focuses on the generation of high-quality anime faces using Deep Co
 - [Dataset](#dataset)
 - [Implementation Details](#implementation-details)
 - [Evaluation Metrics](#evaluation-metrics)
-- [Results](#results)
 - [Conclusions](#conclusions)
-- [Installation and Usage](#installation-and-usage)
-- [References](#references)
+
 
 ## Introduction
 Anime face generation has gained significant attention in the domain of generative models. By training deep learning models on large datasets of anime faces, we can create realistic-looking synthetic images. This project aims to showcase the strengths and weaknesses of two popular generative models, DCGAN and VAE, and evaluate their performance using quantitative metrics.
@@ -45,11 +43,6 @@ The project uses a large dataset of anime faces that are preprocessed to a unifo
 - **Inception Score (IS)**: Measures the quality and diversity of generated images based on how well they match a pretrained Inception model's classification capabilities. A higher score indicates better performance.
 - **Fréchet Inception Distance (FID)**: Compares the distribution of generated images with real images. A lower FID indicates that the generated images are closer to the real distribution, implying better quality and diversity.
 
-## Results
-| Model | Inception Score (↑) | FID (↓) |
-|-------|---------------------|---------|
-| DCGAN | 7.2 ± 0.15          | 45.3    |
-| VAE   | 5.8 ± 0.20          | 65.7    |
 
 ### Analysis
 - **DCGAN**: Outperformed VAE in terms of both IS and FID, showcasing sharper and more visually appealing images.
